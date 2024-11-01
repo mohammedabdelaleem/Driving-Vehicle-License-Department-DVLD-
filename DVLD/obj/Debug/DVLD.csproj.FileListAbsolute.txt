@@ -1,0 +1,17 @@
+D:\University\DVLD\DVLD\DVLD\bin\Debug\DVLD.exe.config
+D:\University\DVLD\DVLD\DVLD\bin\Debug\DVLD.exe
+D:\University\DVLD\DVLD\DVLD\bin\Debug\DVLD.pdb
+D:\University\DVLD\DVLD\DVLD\obj\Debug\DVLD.csproj.AssemblyReference.cache
+D:\University\DVLD\DVLD\DVLD\obj\Debug\DVLD.Properties.Resources.resources
+D:\University\DVLD\DVLD\DVLD\obj\Debug\DVLD.csproj.GenerateResource.cache
+D:\University\DVLD\DVLD\DVLD\obj\Debug\DVLD.csproj.CoreCompileInputs.cache
+D:\University\DVLD\DVLD\DVLD\obj\Debug\DVLD.exe
+D:\University\DVLD\DVLD\DVLD\obj\Debug\DVLD.pdb
+D:\University\DVLD\DVLD\DVLD\obj\Debug\DVLD.MainForm.resources
+D:\University\DVLD\DVLD\DVLD\obj\Debug\DVLD.frmManagePeople.resources
+D:\University\DVLD\DVLD\DVLD\bin\Debug\DVLD_Buisness.dll
+D:\University\DVLD\DVLD\DVLD\bin\Debug\DVLD_DataAccess.dll
+D:\University\DVLD\DVLD\DVLD\bin\Debug\DVLD_Buisness.pdb
+D:\University\DVLD\DVLD\DVLD\bin\Debug\DVLD_DataAccess.pdb
+D:\University\DVLD\DVLD\DVLD\obj\Debug\DVLD.csproj.Up2Date
+D:\University\DVLD\DVLD\DVLD\obj\Debug\DVLD.frmAddEditPerson.resources
