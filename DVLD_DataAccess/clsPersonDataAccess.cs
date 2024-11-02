@@ -6,7 +6,7 @@ using System.Security.Policy;
 
 namespace DataAccess_DVLD
 {
-    public class clsPeopleDataAccess
+    public class clsPersonDataAccess
     {
 
         public static int AddNewPerson(string NationalNo, string FirstName, string SecondName, string ThirdName, string LastName,
@@ -217,7 +217,7 @@ namespace DataAccess_DVLD
 
         public static bool GetPersonInfoByNationalNo(string NationalNo, ref int PersonID, ref string FirstName, ref string SecondName,
        ref string ThirdName, ref string LastName, ref DateTime DateOfBirth,
-       ref short Gendor, ref string Address, ref string Phone, ref string Email,
+       ref byte Gendor, ref string Address, ref string Phone, ref string Email,
        ref int NationalityCountryID, ref string ImagePath)
         {
             bool isFound = false;

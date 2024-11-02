@@ -3,23 +3,8 @@
   "WorkspaceRootPath": "D:\\University\\DVLD\\DVLD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A5B063C-4698-4A6E-996A-4CD57B0C2675}|DVLD_DataAccess\\DVLD_DataAccess.csproj|d:\\university\\dvld\\dvld\\dvld_dataaccess\\clscountrydataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A5B063C-4698-4A6E-996A-4CD57B0C2675}|DVLD_DataAccess\\DVLD_DataAccess.csproj|solutionrelative:dvld_dataaccess\\clscountrydataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\downloads\\DVLD Project Final\\Project\\DVLD_DataAccess\\clsPersonData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A5B063C-4698-4A6E-996A-4CD57B0C2675}|DVLD_DataAccess\\DVLD_DataAccess.csproj|d:\\university\\dvld\\dvld\\dvld_dataaccess\\clspeopledataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A5B063C-4698-4A6E-996A-4CD57B0C2675}|DVLD_DataAccess\\DVLD_DataAccess.csproj|solutionrelative:dvld_dataaccess\\clspeopledataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73EFE663-D5BE-4C63-A072-94A8C46E6B0B}|DVLD\\DVLD.csproj|d:\\university\\dvld\\dvld\\dvld\\people\\frmaddeditperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73EFE663-D5BE-4C63-A072-94A8C46E6B0B}|DVLD\\DVLD.csproj|solutionrelative:dvld\\people\\frmaddeditperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73EFE663-D5BE-4C63-A072-94A8C46E6B0B}|DVLD\\DVLD.csproj|d:\\university\\dvld\\dvld\\dvld\\people\\frmaddeditperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{73EFE663-D5BE-4C63-A072-94A8C46E6B0B}|DVLD\\DVLD.csproj|solutionrelative:dvld\\people\\frmaddeditperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1C23FFD7-D4F4-4C16-A9EC-9997270169BC}|DVLD_Buisness\\DVLD_Buisness.csproj|d:\\university\\dvld\\dvld\\dvld_buisness\\clsperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C23FFD7-D4F4-4C16-A9EC-9997270169BC}|DVLD_Buisness\\DVLD_Buisness.csproj|solutionrelative:dvld_buisness\\clsperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,72 +14,19 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmAddEditPerson.cs [Design]",
-              "DocumentMoniker": "D:\\University\\DVLD\\DVLD\\DVLD\\People\\frmAddEditPerson.cs",
-              "RelativeDocumentMoniker": "DVLD\\People\\frmAddEditPerson.cs",
-              "ToolTip": "D:\\University\\DVLD\\DVLD\\DVLD\\People\\frmAddEditPerson.cs [Design]",
-              "RelativeToolTip": "DVLD\\People\\frmAddEditPerson.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T05:35:06.8Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmAddEditPerson.cs",
-              "DocumentMoniker": "D:\\University\\DVLD\\DVLD\\DVLD\\People\\frmAddEditPerson.cs",
-              "RelativeDocumentMoniker": "DVLD\\People\\frmAddEditPerson.cs",
-              "ToolTip": "D:\\University\\DVLD\\DVLD\\DVLD\\People\\frmAddEditPerson.cs",
-              "RelativeToolTip": "DVLD\\People\\frmAddEditPerson.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAwEMAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T12:44:22.184Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "clsCountryDataAccess.cs",
-              "DocumentMoniker": "D:\\University\\DVLD\\DVLD\\DVLD_DataAccess\\clsCountryDataAccess.cs",
-              "RelativeDocumentMoniker": "DVLD_DataAccess\\clsCountryDataAccess.cs",
-              "ToolTip": "D:\\University\\DVLD\\DVLD\\DVLD_DataAccess\\clsCountryDataAccess.cs",
-              "RelativeToolTip": "DVLD_DataAccess\\clsCountryDataAccess.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAdAAAA",
+              "Title": "clsPerson.cs",
+              "DocumentMoniker": "D:\\University\\DVLD\\DVLD\\DVLD_Buisness\\clsPerson.cs",
+              "RelativeDocumentMoniker": "DVLD_Buisness\\clsPerson.cs",
+              "ToolTip": "D:\\University\\DVLD\\DVLD\\DVLD_Buisness\\clsPerson.cs",
+              "RelativeToolTip": "DVLD_Buisness\\clsPerson.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T21:10:25.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "clsPersonData.cs",
-              "DocumentMoniker": "D:\\downloads\\DVLD Project Final\\Project\\DVLD_DataAccess\\clsPersonData.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\downloads\\DVLD Project Final\\Project\\DVLD_DataAccess\\clsPersonData.cs",
-              "ToolTip": "D:\\downloads\\DVLD Project Final\\Project\\DVLD_DataAccess\\clsPersonData.cs",
-              "RelativeToolTip": "..\\..\\..\\downloads\\DVLD Project Final\\Project\\DVLD_DataAccess\\clsPersonData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAMAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T20:56:34.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "clsPeopleDataAccess.cs",
-              "DocumentMoniker": "D:\\University\\DVLD\\DVLD\\DVLD_DataAccess\\clsPeopleDataAccess.cs",
-              "RelativeDocumentMoniker": "DVLD_DataAccess\\clsPeopleDataAccess.cs",
-              "ToolTip": "D:\\University\\DVLD\\DVLD\\DVLD_DataAccess\\clsPeopleDataAccess.cs",
-              "RelativeToolTip": "DVLD_DataAccess\\clsPeopleDataAccess.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T14:39:25.87Z",
+              "WhenOpened": "2024-11-02T21:08:40.712Z",
               "EditorCaption": ""
             },
             {

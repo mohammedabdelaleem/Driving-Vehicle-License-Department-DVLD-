@@ -9,7 +9,7 @@ namespace DVLD
     public partial class frmManagePeople : Form
     {
 
-        private static DataTable _dtAllPeople = clsPeople.ListAllPeople();
+        private static DataTable _dtAllPeople = clsPerson.ListAllPeople();
 
         //only select the columns that you want to show in the grid
         private DataTable _dtPeople = _dtAllPeople.DefaultView.ToTable(false, "PersonID", "NationalNo",
@@ -19,7 +19,7 @@ namespace DVLD
 
         public void RefreshPeopleList()
         {
-            _dtAllPeople = clsPeople.ListAllPeople();
+            _dtAllPeople = clsPerson.ListAllPeople();
             _dtPeople = _dtAllPeople.DefaultView.ToTable(false, "PersonID", "NationalNo",
                                                          "FirstName", "SecondName", "ThirdName", "LastName",
                                                          "GendorCaption", "DateOfBirth", "CountryName",
@@ -198,7 +198,7 @@ namespace DVLD
 
         private void btnAddNewPerson_Click(object sender, EventArgs e)
         {
-         frmAddEditPerson frm = new frmAddEditPerson();
+         frmAddEditPerson frm = new frmAddEditPerson(-1);
            frm.ShowDialog();
         }
     }

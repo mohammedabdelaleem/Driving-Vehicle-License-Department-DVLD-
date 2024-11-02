@@ -13,9 +13,25 @@ namespace DVLD
 {
     public partial class frmAddEditPerson : Form
     {
-        public frmAddEditPerson()
+        enum enMode {  AddNew=-1 , Update=0  }
+
+        private int _personID;
+        enMode _mode = enMode.AddNew;
+
+
+        public frmAddEditPerson(int personID)
         {
             InitializeComponent();
+            _personID = personID;
+
+            if(_personID == -1)
+            {
+                _mode = enMode.AddNew ;
+            }else
+            {
+                _mode = enMode.Update ;
+            }
+
 
             // Enforce Value For not null components
             txtFirst.Validating += ForceTextboxValue;

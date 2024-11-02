@@ -22,9 +22,11 @@ namespace DVLD
             MessageBox.Show("Application");
         }
 
+        frmManagePeople frmPeople = new frmManagePeople();
         private void peopleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("people");
+            frmPeople.Owner = this;
+            frmPeople.ShowDialog();
 
         }
 
