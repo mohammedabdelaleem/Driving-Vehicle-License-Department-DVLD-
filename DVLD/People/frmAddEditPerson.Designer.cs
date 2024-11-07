@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddEditPerson));
             this.lblMainTitle = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblPersonID = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnColose = new System.Windows.Forms.Button();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -65,14 +66,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtSecond = new System.Windows.Forms.TextBox();
-            this.txtThird = new System.Windows.Forms.TextBox();
-            this.txtLast = new System.Windows.Forms.TextBox();
-            this.txtFirst = new System.Windows.Forms.TextBox();
+            this.txtSecondName = new System.Windows.Forms.TextBox();
+            this.txtThirdName = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -123,7 +125,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.btnColose);
             this.groupBox1.Controls.Add(this.txtAddress);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.pictureBox10);
@@ -154,10 +156,10 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtSecond);
-            this.groupBox1.Controls.Add(this.txtThird);
-            this.groupBox1.Controls.Add(this.txtLast);
-            this.groupBox1.Controls.Add(this.txtFirst);
+            this.groupBox1.Controls.Add(this.txtSecondName);
+            this.groupBox1.Controls.Add(this.txtThirdName);
+            this.groupBox1.Controls.Add(this.txtLastName);
+            this.groupBox1.Controls.Add(this.txtFirstName);
             this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(17, 146);
@@ -170,7 +172,7 @@
             // 
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = global::DVLD.Properties.Resources.Save_32;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(697, 460);
             this.button3.Name = "button3";
@@ -179,20 +181,22 @@
             this.button3.Text = "Save";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // btnColose
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::DVLD.Properties.Resources.Close_32;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(554, 460);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 34);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Close";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnColose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnColose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnColose.Image = ((System.Drawing.Image)(resources.GetObject("btnColose.Image")));
+            this.btnColose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnColose.Location = new System.Drawing.Point(554, 460);
+            this.btnColose.Name = "btnColose";
+            this.btnColose.Size = new System.Drawing.Size(110, 34);
+            this.btnColose.TabIndex = 15;
+            this.btnColose.Text = "Close";
+            this.btnColose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnColose.UseVisualStyleBackColor = true;
+            this.btnColose.Click += new System.EventHandler(this.btnColose_Click);
             // 
             // txtAddress
             // 
@@ -215,7 +219,7 @@
             // 
             // pictureBox10
             // 
-            this.pictureBox10.Image = global::DVLD.Properties.Resources.Address_32;
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
             this.pictureBox10.Location = new System.Drawing.Point(166, 342);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(32, 32);
@@ -245,7 +249,7 @@
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Image = global::DVLD.Properties.Resources.Country_32;
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
             this.pictureBox9.Location = new System.Drawing.Point(582, 273);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(32, 32);
@@ -260,6 +264,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(173, 27);
             this.txtEmail.TabIndex = 9;
+            this.txtEmail.Validating += new System.ComponentModel.CancelEventHandler(this.txtEmail_Validating);
             // 
             // label10
             // 
@@ -273,7 +278,7 @@
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Image = global::DVLD.Properties.Resources.Email_32;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(166, 273);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(32, 32);
@@ -301,7 +306,7 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = global::DVLD.Properties.Resources.Phone_32;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(582, 204);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(32, 32);
@@ -319,10 +324,11 @@
             this.rbFemale.TabIndex = 7;
             this.rbFemale.Text = "Female";
             this.rbFemale.UseVisualStyleBackColor = true;
+            this.rbFemale.CheckedChanged += new System.EventHandler(this.rbFemale_CheckedChanged);
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::DVLD.Properties.Resources.Woman_32;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(294, 200);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(32, 32);
@@ -342,6 +348,7 @@
             this.rbMale.TabStop = true;
             this.rbMale.Text = "Male";
             this.rbMale.UseVisualStyleBackColor = true;
+            this.rbMale.CheckedChanged += new System.EventHandler(this.rbMale_CheckedChanged);
             // 
             // label8
             // 
@@ -355,7 +362,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::DVLD.Properties.Resources.Man_32;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(166, 200);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(32, 32);
@@ -384,7 +391,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::DVLD.Properties.Resources.Calendar_32;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(582, 129);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(32, 32);
@@ -399,6 +406,7 @@
             this.txtNationalNo.Name = "txtNationalNo";
             this.txtNationalNo.Size = new System.Drawing.Size(173, 27);
             this.txtNationalNo.TabIndex = 4;
+            this.txtNationalNo.Validating += new System.ComponentModel.CancelEventHandler(this.txtNationalNo_Validating);
             // 
             // NationalNumber
             // 
@@ -412,7 +420,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::DVLD.Properties.Resources.Number_32;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(166, 129);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(32, 32);
@@ -430,6 +438,7 @@
             this.llRemove.TabIndex = 13;
             this.llRemove.TabStop = true;
             this.llRemove.Text = "Remove";
+            this.llRemove.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llRemove_LinkClicked);
             // 
             // llSetImage
             // 
@@ -441,10 +450,11 @@
             this.llSetImage.TabIndex = 12;
             this.llSetImage.TabStop = true;
             this.llSetImage.Text = "Set Image";
+            this.llSetImage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llSetImage_LinkClicked);
             // 
             // pbPersonImage
             // 
-            this.pbPersonImage.Image = global::DVLD.Properties.Resources.Male_512;
+            this.pbPersonImage.Image = ((System.Drawing.Image)(resources.GetObject("pbPersonImage.Image")));
             this.pbPersonImage.Location = new System.Drawing.Point(830, 102);
             this.pbPersonImage.Name = "pbPersonImage";
             this.pbPersonImage.Size = new System.Drawing.Size(173, 165);
@@ -492,41 +502,41 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Last";
             // 
-            // txtSecond
+            // txtSecondName
             // 
-            this.txtSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSecond.Location = new System.Drawing.Point(418, 52);
-            this.txtSecond.Name = "txtSecond";
-            this.txtSecond.Size = new System.Drawing.Size(173, 27);
-            this.txtSecond.TabIndex = 1;
+            this.txtSecondName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSecondName.Location = new System.Drawing.Point(418, 52);
+            this.txtSecondName.Name = "txtSecondName";
+            this.txtSecondName.Size = new System.Drawing.Size(173, 27);
+            this.txtSecondName.TabIndex = 1;
             // 
-            // txtThird
+            // txtThirdName
             // 
-            this.txtThird.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtThird.Location = new System.Drawing.Point(620, 52);
-            this.txtThird.Name = "txtThird";
-            this.txtThird.Size = new System.Drawing.Size(173, 27);
-            this.txtThird.TabIndex = 2;
+            this.txtThirdName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtThirdName.Location = new System.Drawing.Point(620, 52);
+            this.txtThirdName.Name = "txtThirdName";
+            this.txtThirdName.Size = new System.Drawing.Size(173, 27);
+            this.txtThirdName.TabIndex = 2;
             // 
-            // txtLast
+            // txtLastName
             // 
-            this.txtLast.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLast.Location = new System.Drawing.Point(830, 48);
-            this.txtLast.Name = "txtLast";
-            this.txtLast.Size = new System.Drawing.Size(184, 27);
-            this.txtLast.TabIndex = 3;
+            this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLastName.Location = new System.Drawing.Point(830, 48);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(184, 27);
+            this.txtLastName.TabIndex = 3;
             // 
-            // txtFirst
+            // txtFirstName
             // 
-            this.txtFirst.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFirst.Location = new System.Drawing.Point(216, 52);
-            this.txtFirst.Name = "txtFirst";
-            this.txtFirst.Size = new System.Drawing.Size(173, 27);
-            this.txtFirst.TabIndex = 0;
+            this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFirstName.Location = new System.Drawing.Point(216, 52);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(173, 27);
+            this.txtFirstName.TabIndex = 0;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::DVLD.Properties.Resources.Person_32;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(166, 48);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 32);
@@ -545,7 +555,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::DVLD.Properties.Resources.Number_32;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(129, 99);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 32);
@@ -556,6 +566,12 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.InitialDirectory = "D:";
+            this.openFileDialog1.RestoreDirectory = true;
             // 
             // frmAddEditPerson
             // 
@@ -571,6 +587,7 @@
             this.Name = "frmAddEditPerson";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmAddEditPerson";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAddEditPerson_FormClosing);
             this.Load += new System.EventHandler(this.frmAddEditPerson_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -604,10 +621,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtSecond;
-        private System.Windows.Forms.TextBox txtThird;
-        private System.Windows.Forms.TextBox txtLast;
-        private System.Windows.Forms.TextBox txtFirst;
+        private System.Windows.Forms.TextBox txtSecondName;
+        private System.Windows.Forms.TextBox txtThirdName;
+        private System.Windows.Forms.TextBox txtLastName;
+        private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.PictureBox pbPersonImage;
         private System.Windows.Forms.LinkLabel llRemove;
         private System.Windows.Forms.LinkLabel llSetImage;
@@ -635,7 +652,8 @@
         private System.Windows.Forms.ComboBox cbCountry;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnColose;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

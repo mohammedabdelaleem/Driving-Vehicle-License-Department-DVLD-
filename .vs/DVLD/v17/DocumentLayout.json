@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "D:\\University\\DVLD\\DVLD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1C23FFD7-D4F4-4C16-A9EC-9997270169BC}|DVLD_Buisness\\DVLD_Buisness.csproj|d:\\university\\dvld\\dvld\\dvld_buisness\\clsperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C23FFD7-D4F4-4C16-A9EC-9997270169BC}|DVLD_Buisness\\DVLD_Buisness.csproj|solutionrelative:dvld_buisness\\clsperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73EFE663-D5BE-4C63-A072-94A8C46E6B0B}|DVLD\\DVLD.csproj|d:\\university\\dvld\\dvld\\dvld\\people\\control\\ctrlpersoninfowithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{73EFE663-D5BE-4C63-A072-94A8C46E6B0B}|DVLD\\DVLD.csproj|solutionrelative:dvld\\people\\control\\ctrlpersoninfowithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73EFE663-D5BE-4C63-A072-94A8C46E6B0B}|DVLD\\DVLD.csproj|d:\\university\\dvld\\dvld\\dvld\\people\\control\\ctrlpersoninfowithfilter.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{73EFE663-D5BE-4C63-A072-94A8C46E6B0B}|DVLD\\DVLD.csproj|solutionrelative:dvld\\people\\control\\ctrlpersoninfowithfilter.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73EFE663-D5BE-4C63-A072-94A8C46E6B0B}|DVLD\\DVLD.csproj|D:\\University\\DVLD\\DVLD\\dvld\\people\\frmpersondetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73EFE663-D5BE-4C63-A072-94A8C46E6B0B}|DVLD\\DVLD.csproj|solutionrelative:dvld\\people\\frmpersondetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73EFE663-D5BE-4C63-A072-94A8C46E6B0B}|DVLD\\DVLD.csproj|d:\\university\\dvld\\dvld\\dvld\\people\\frmpersondetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{73EFE663-D5BE-4C63-A072-94A8C46E6B0B}|DVLD\\DVLD.csproj|solutionrelative:dvld\\people\\frmpersondetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73EFE663-D5BE-4C63-A072-94A8C46E6B0B}|DVLD\\DVLD.csproj|d:\\university\\dvld\\dvld\\dvld\\people\\frmmanagepeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{73EFE663-D5BE-4C63-A072-94A8C46E6B0B}|DVLD\\DVLD.csproj|solutionrelative:dvld\\people\\frmmanagepeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73EFE663-D5BE-4C63-A072-94A8C46E6B0B}|DVLD\\DVLD.csproj|d:\\university\\dvld\\dvld\\dvld\\people\\frmmanagepeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73EFE663-D5BE-4C63-A072-94A8C46E6B0B}|DVLD\\DVLD.csproj|solutionrelative:dvld\\people\\frmmanagepeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73EFE663-D5BE-4C63-A072-94A8C46E6B0B}|DVLD\\DVLD.csproj|d:\\university\\dvld\\dvld\\dvld\\people\\frmmanagepeople.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73EFE663-D5BE-4C63-A072-94A8C46E6B0B}|DVLD\\DVLD.csproj|solutionrelative:dvld\\people\\frmmanagepeople.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73EFE663-D5BE-4C63-A072-94A8C46E6B0B}|DVLD\\DVLD.csproj|d:\\university\\dvld\\dvld\\dvld\\people\\control\\ctrlpersoninfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73EFE663-D5BE-4C63-A072-94A8C46E6B0B}|DVLD\\DVLD.csproj|solutionrelative:dvld\\people\\control\\ctrlpersoninfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,24 +42,111 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "clsPerson.cs",
-              "DocumentMoniker": "D:\\University\\DVLD\\DVLD\\DVLD_Buisness\\clsPerson.cs",
-              "RelativeDocumentMoniker": "DVLD_Buisness\\clsPerson.cs",
-              "ToolTip": "D:\\University\\DVLD\\DVLD\\DVLD_Buisness\\clsPerson.cs",
-              "RelativeToolTip": "DVLD_Buisness\\clsPerson.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T21:08:40.712Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ctrlPersonInfoWithFilter.cs [Design]",
+              "DocumentMoniker": "D:\\University\\DVLD\\DVLD\\DVLD\\People\\Control\\ctrlPersonInfoWithFilter.cs",
+              "RelativeDocumentMoniker": "DVLD\\People\\Control\\ctrlPersonInfoWithFilter.cs",
+              "ToolTip": "D:\\University\\DVLD\\DVLD\\DVLD\\People\\Control\\ctrlPersonInfoWithFilter.cs [Design]",
+              "RelativeToolTip": "DVLD\\People\\Control\\ctrlPersonInfoWithFilter.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T20:53:57.077Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ctrlPersonInfoWithFilter.resx",
+              "DocumentMoniker": "D:\\University\\DVLD\\DVLD\\DVLD\\People\\Control\\ctrlPersonInfoWithFilter.resx",
+              "RelativeDocumentMoniker": "DVLD\\People\\Control\\ctrlPersonInfoWithFilter.resx",
+              "ToolTip": "D:\\University\\DVLD\\DVLD\\DVLD\\People\\Control\\ctrlPersonInfoWithFilter.resx",
+              "RelativeToolTip": "DVLD\\People\\Control\\ctrlPersonInfoWithFilter.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-11-07T20:53:54.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ctrlPersonInfo.cs",
+              "DocumentMoniker": "D:\\University\\DVLD\\DVLD\\DVLD\\People\\Control\\ctrlPersonInfo.cs",
+              "RelativeDocumentMoniker": "DVLD\\People\\Control\\ctrlPersonInfo.cs",
+              "ToolTip": "D:\\University\\DVLD\\DVLD\\DVLD\\People\\Control\\ctrlPersonInfo.cs",
+              "RelativeToolTip": "DVLD\\People\\Control\\ctrlPersonInfo.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAqwDIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T20:49:51.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmManagePeople.Designer.cs",
+              "DocumentMoniker": "D:\\University\\DVLD\\DVLD\\DVLD\\People\\frmManagePeople.Designer.cs",
+              "RelativeDocumentMoniker": "DVLD\\People\\frmManagePeople.Designer.cs",
+              "ToolTip": "D:\\University\\DVLD\\DVLD\\DVLD\\People\\frmManagePeople.Designer.cs",
+              "RelativeToolTip": "DVLD\\People\\frmManagePeople.Designer.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAmwHQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T20:49:43.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmManagePeople.cs",
+              "DocumentMoniker": "D:\\University\\DVLD\\DVLD\\DVLD\\People\\frmManagePeople.cs",
+              "RelativeDocumentMoniker": "DVLD\\People\\frmManagePeople.cs",
+              "ToolTip": "D:\\University\\DVLD\\DVLD\\DVLD\\People\\frmManagePeople.cs",
+              "RelativeToolTip": "DVLD\\People\\frmManagePeople.cs",
+              "ViewState": "AQIAAP0AAAAAAAAAAAAiwAABAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T20:47:17.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmManagePeople.cs [Design]",
+              "DocumentMoniker": "D:\\University\\DVLD\\DVLD\\DVLD\\People\\frmManagePeople.cs",
+              "RelativeDocumentMoniker": "DVLD\\People\\frmManagePeople.cs",
+              "ToolTip": "D:\\University\\DVLD\\DVLD\\DVLD\\People\\frmManagePeople.cs [Design]",
+              "RelativeToolTip": "DVLD\\People\\frmManagePeople.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T20:47:13.945Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmPersonDetails.cs",
+              "DocumentMoniker": "D:\\University\\DVLD\\DVLD\\DVLD\\People\\frmPersonDetails.cs",
+              "RelativeDocumentMoniker": "DVLD\\People\\frmPersonDetails.cs",
+              "ToolTip": "D:\\University\\DVLD\\DVLD\\DVLD\\People\\frmPersonDetails.cs",
+              "RelativeToolTip": "DVLD\\People\\frmPersonDetails.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAcAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T20:21:14.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmPersonDetails.cs [Design]",
+              "DocumentMoniker": "D:\\University\\DVLD\\DVLD\\DVLD\\People\\frmPersonDetails.cs",
+              "RelativeDocumentMoniker": "DVLD\\People\\frmPersonDetails.cs",
+              "ToolTip": "D:\\University\\DVLD\\DVLD\\DVLD\\People\\frmPersonDetails.cs [Design]",
+              "RelativeToolTip": "DVLD\\People\\frmPersonDetails.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T20:44:30.261Z",
+              "EditorCaption": " [Design]"
             }
           ]
         },

@@ -49,6 +49,7 @@ namespace DataAccess_DVLD
 
             try
             {
+                connection.Open();
                 object result = command.ExecuteScalar();
 
                 if (result != null && int.TryParse(result.ToString(), out int insertedID))
@@ -98,7 +99,7 @@ namespace DataAccess_DVLD
             ImagePath = (ImagePath != string.Empty) ? ImagePath : DBNull.Value.ToString();
             Email = (Email != string.Empty) ? Email : DBNull.Value.ToString();
 
-
+            command.Parameters.AddWithValue("@PersonID", PersonID);
             command.Parameters.AddWithValue("@NationalNo", NationalNo);
             command.Parameters.AddWithValue("@FirstName", FirstName);
             command.Parameters.AddWithValue("@SecondName", SecondName);
@@ -114,6 +115,7 @@ namespace DataAccess_DVLD
 
             try
             {
+                connection.Open();
                 rowsEffected = command.ExecuteNonQuery();
 
              

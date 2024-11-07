@@ -15,3 +15,6 @@ D:\University\DVLD\DVLD\DVLD\bin\Debug\DVLD_Buisness.pdb
 D:\University\DVLD\DVLD\DVLD\bin\Debug\DVLD_DataAccess.pdb
 D:\University\DVLD\DVLD\DVLD\obj\Debug\DVLD.csproj.Up2Date
 D:\University\DVLD\DVLD\DVLD\obj\Debug\DVLD.frmAddEditPerson.resources
+D:\University\DVLD\DVLD\DVLD\obj\Debug\DVLD.Controls.ctrlPersonInfo.resources
+D:\University\DVLD\DVLD\DVLD\obj\Debug\DVLD.ctrlPersonInfoWithFilter.resources
+D:\University\DVLD\DVLD\DVLD\obj\Debug\DVLD.frmPersonDetails.resources

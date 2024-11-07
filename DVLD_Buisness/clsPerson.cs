@@ -16,7 +16,6 @@ namespace Buisness_DVLD
         enum enMode { AddNew=0 , Update=1 }
         enMode Mode = enMode.AddNew;
 
-
         // 2 - Properties 
       
         public int PersonID { get; set; }
@@ -25,7 +24,7 @@ namespace Buisness_DVLD
         public string SecondName { get; set; }
         public string ThirdName { get; set; }
         public string LastName { get; set; }
-        public string FullName { get {  return FirstName + " " + SecondName + ThirdName!=string.Empty ? " "+ThirdName:" " + LastName; } }
+        public string FullName { get {  return FirstName + " " + SecondName +" "+ThirdName + " " + LastName; } }
         public DateTime DateOfBirth { get; set; }
         public byte Gendor { get; set; }
         public string Address { get; set; }
@@ -34,7 +33,7 @@ namespace Buisness_DVLD
         public int NationalityCountryID { get; set; }
         public string ImagePath { get; set; }
 
-        clsCountry countryInfo;
+        public clsCountry countryInfo;
 
 
         // 3 - public default ctor 

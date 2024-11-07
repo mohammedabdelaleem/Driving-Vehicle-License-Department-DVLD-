@@ -17,7 +17,7 @@ namespace DVLD
                                                          "GendorCaption", "DateOfBirth", "CountryName",
                                                          "Phone", "Email");
 
-        public void RefreshPeopleList()
+        private void _RefreshPeopleList()
         {
             _dtAllPeople = clsPerson.ListAllPeople();
             _dtPeople = _dtAllPeople.DefaultView.ToTable(false, "PersonID", "NationalNo",
@@ -196,10 +196,70 @@ namespace DVLD
                 e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
 
+        frmAddEditPerson frm01 = new frmAddEditPerson(-1);
         private void btnAddNewPerson_Click(object sender, EventArgs e)
         {
-         frmAddEditPerson frm = new frmAddEditPerson(-1);
-           frm.ShowDialog();
+         
+           frm01.ShowDialog();
+            _RefreshPeopleList();
+        }
+
+        private void sendEmailToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This Feature Doesn't Finished Yet", "Stup", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void phoneCallToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This Feature Doesn't Finished Yet", "Stup", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+    
+
+        frmAddEditPerson frm02 = new frmAddEditPerson(-1);
+        private void addNewPersonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm02.ShowDialog();
+            _RefreshPeopleList();
+        }
+
+
+        private void editPersonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddEditPerson frm = new frmAddEditPerson((int)dgvListPeople.CurrentRow.Cells[0].Value);
+            frm.ShowDialog();
+            _RefreshPeopleList();
+        }
+
+        private void deletePersonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show($"Are You Sure You Want To Delete Person [{dgvListPeople.CurrentRow.Cells[0].Value}]", "Confirm Deletion",MessageBoxButtons.OKCancel,MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                if (clsPerson.DeletePerson((int)dgvListPeople.CurrentRow.Cells[0].Value))
+                {
+
+                 MessageBox.Show("Person Deleted Successfully.", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    _RefreshPeopleList();
+                }
+                else
+                    MessageBox.Show("Person was not deleted because it has data linked to it.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); // refrential entigrity
+            }
+        }
+
+        private void sToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPersonDetails frm = new frmPersonDetails((int)dgvListPeople.CurrentRow.Cells[0].Value);
+            frm.ShowDialog();
+
+            //_RefreshPeopleList();
+        }
+
+ 
+
+        private void dgvListPeople_DoubleClick(object sender, EventArgs e)
+        {
+ frmPersonDetails frm = new frmPersonDetails((int)dgvListPeople.CurrentRow.Cells[0].Value);
+            frm.ShowDialog();
         }
     }
 }

@@ -119,11 +119,16 @@ namespace DVLD_DataAccess
 
             try
             {
+                connection.Open();
                 SqlDataReader reader = command.ExecuteReader();
 
                 if(reader.HasRows)
                 {
                     countries.Load(reader);
+                }
+                else
+                {
+                    throw new Exception("No Countries");
                 }
 
                 reader.Close();

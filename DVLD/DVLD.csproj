@@ -47,12 +47,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="People\Control\ctrlPersonInfoWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\Control\ctrlPersonInfoWithFilter.Designer.cs">
+      <DependentUpon>ctrlPersonInfoWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\frmPersonDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\frmPersonDetails.Designer.cs">
+      <DependentUpon>frmPersonDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\Control\ctrlPersonInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\Control\ctrlPersonInfo.Designer.cs">
+      <DependentUpon>ctrlPersonInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalClasses\clsUtil.cs" />
+    <Compile Include="GlobalClasses\clsValidation.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="People\DataBackEventArgs.cs" />
     <Compile Include="People\frmAddEditPerson.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,8 +88,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="People\Control\ctrlPersonInfoWithFilter.resx">
+      <DependentUpon>ctrlPersonInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\frmPersonDetails.resx">
+      <DependentUpon>frmPersonDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Control\ctrlPersonInfo.resx">
+      <DependentUpon>ctrlPersonInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="People\frmAddEditPerson.resx">
       <DependentUpon>frmAddEditPerson.cs</DependentUpon>
@@ -168,5 +198,127 @@
   <ItemGroup>
     <None Include="Resources\Male 512.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PersonDetails 321.png" />
+    <None Include="Resources\Written Test 512.png" />
+    <None Include="Resources\Written Test 32.png" />
+    <None Include="Resources\Written Test 32 Sechdule.png" />
+    <None Include="Resources\Woman 321.png" />
+    <None Include="Resources\WallPaper2.jpg" />
+    <None Include="Resources\wallpaper.jpg" />
+    <None Include="Resources\Vision Test Schdule.png" />
+    <None Include="Resources\Vision Test 32.png" />
+    <None Include="Resources\Vision 512.png" />
+    <None Include="Resources\users 64.png" />
+    <None Include="Resources\Users 2 400.png" />
+    <None Include="Resources\Users 2 641.png" />
+    <None Include="Resources\User 32 -2.png" />
+    <None Include="Resources\TestType 512.png" />
+    <None Include="Resources\TestType 32.png" />
+    <None Include="Resources\Test Type 64.png" />
+    <None Include="Resources\Test 32.png" />
+    <None Include="Resources\Street Test 32.png" />
+    <None Include="Resources\SignOut 64.png" />
+    <None Include="Resources\sign_out 32 -2.png" />
+    <None Include="Resources\sign_in 32.png" />
+    <None Include="Resources\Sign Out 32.png" />
+    <None Include="Resources\send email 32.png" />
+    <None Include="Resources\SearchPerson.png" />
+    <None Include="Resources\Schedule Test 512.png" />
+    <None Include="Resources\Schedule Test 32.png" />
+    <None Include="Resources\Save 321.png" />
+    <None Include="Resources\Retake Test 32.png" />
+    <None Include="Resources\Renew Driving License 32.png" />
+    <None Include="Resources\Release Detained License 512.png" />
+    <None Include="Resources\Release Detained License 64.png" />
+    <None Include="Resources\Release Detained License 32.png" />
+    <None Include="Resources\Question 32.png" />
+    <None Include="Resources\Prev 64.png" />
+    <None Include="Resources\Prev 32.png" />
+    <None Include="Resources\Phone 321.png" />
+    <None Include="Resources\PersonLicenseHistory 512.png" />
+    <None Include="Resources\PersonLicenseHistory 32.png" />
+    <None Include="Resources\PersonDetails 32.png" />
+    <None Include="Resources\Person 321.png" />
+    <None Include="Resources\People 512.png" />
+    <None Include="Resources\People 4001.png" />
+    <None Include="Resources\People 641.png" />
+    <None Include="Resources\Password 32.png" />
+    <None Include="Resources\PassedTests 32.png" />
+    <None Include="Resources\Passed.png" />
+    <None Include="Resources\Number 321.png" />
+    <None Include="Resources\Notes 32.png" />
+    <None Include="Resources\Next 64.png" />
+    <None Include="Resources\Next 32.png" />
+    <None Include="Resources\New Driving License 32.png" />
+    <None Include="Resources\New Application 64.png" />
+    <None Include="Resources\money 32.png" />
+    <None Include="Resources\money 32 - 2.png" />
+    <None Include="Resources\Manage People.png" />
+    <None Include="Resources\Manage Applications 64.png" />
+    <None Include="Resources\Manage Applications 32.png" />
+    <None Include="Resources\Man 321.png" />
+    <None Include="Resources\Male 5121.png" />
+    <None Include="Resources\Lost Driving License 32.png" />
+    <None Include="Resources\Logo Final1.jpg" />
+    <None Include="Resources\LocalDriving License.png" />
+    <None Include="Resources\Local Driving License 512.png" />
+    <None Include="Resources\Local 32.png" />
+    <None Include="Resources\List 32.png" />
+    <None Include="Resources\LicenseView 400.png" />
+    <None Include="Resources\License View 32.png" />
+    <None Include="Resources\License Type 32.png" />
+    <None Include="Resources\IssueDrivingLicense 32.png" />
+    <None Include="Resources\International 32.png" />
+    <None Include="Resources\IconLogo.png" />
+    <None Include="Resources\Female 5121.png" />
+    <None Include="Resources\Faild.png" />
+    <None Include="Resources\Exit 64.png" />
+    <None Include="Resources\Email 321.png" />
+    <None Include="Resources\Edit User 32.png" />
+    <None Include="Resources\edit 32.png" />
+    <None Include="Resources\DVLD Logo.png" />
+    <None Include="Resources\driving-test 512.png" />
+    <None Include="Resources\Drivers 641.png" />
+    <None Include="Resources\Driver Main.png" />
+    <None Include="Resources\Driver License 48.png" />
+    <None Include="Resources\Detained Driving License 32.png" />
+    <None Include="Resources\Detain 512.png" />
+    <None Include="Resources\Detain 64.png" />
+    <None Include="Resources\Detain 32.png" />
+    <None Include="Resources\Delete User 32.png" />
+    <None Include="Resources\Delete 32.png" />
+    <None Include="Resources\Delete 32 2.png" />
+    <None Include="Resources\Damaged Driving License 32.png" />
+    <None Include="Resources\cross 64.png" />
+    <None Include="Resources\cross 32.png" />
+    <None Include="Resources\Country 321.png" />
+    <None Include="Resources\Count 32.png" />
+    <None Include="Resources\closeBlack32.png" />
+    <None Include="Resources\CloseBlack.png" />
+    <None Include="Resources\Close 64.png" />
+    <None Include="Resources\Close 321.png" />
+    <None Include="Resources\Cars 48.png" />
+    <None Include="Resources\call 32.png" />
+    <None Include="Resources\Calendar 321.png" />
+    <None Include="Resources\ApplicationType.png" />
+    <None Include="Resources\ApplicationTitle.png" />
+    <None Include="Resources\Applications.png" />
+    <None Include="Resources\Applications 641.png" />
+    <None Include="Resources\Application Types 512.png" />
+    <None Include="Resources\Application Types 64.png" />
+    <None Include="Resources\Address 321.png" />
+    <None Include="Resources\AddPerson 32.png" />
+    <None Include="Resources\AddAppointment 32.png" />
+    <None Include="Resources\Add Person 721.png" />
+    <None Include="Resources\Add Person 401.png" />
+    <None Include="Resources\Add New User 72.png" />
+    <None Include="Resources\Add New User 32.png" />
+    <None Include="Resources\account_settings 641.png" />
+    <None Include="Resources\AddPerson 321.png" />
+    <None Include="Resources\edit 321.png" />
+    <Content Include="Resources\Female 512.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
